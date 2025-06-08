@@ -1,5 +1,9 @@
-# Homebrewのパス
-export PATH="/opt/homebrew/bin:$PATH"
+# OSごとにHomebrewのパスを設定
+if [ "$(uname)" = 'Darwin' ]; then
+  export PATH="/opt/homebrew/bin:$PATH"
+elif [ "$(uname)" = 'Linux' ]; then
+  export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+fi
 
 # ユーザーコマンド
 export PATH="$HOME/commands:$PATH"
