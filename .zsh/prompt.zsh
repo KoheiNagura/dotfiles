@@ -2,10 +2,6 @@
 autoload -Uz colors && colors
 export CLICOLOR=1
 
-# zsh-git-prompt
-source $(brew --prefix)/opt/zsh-git-prompt/zshrc.sh
-alias python="python3"
-
 function prompt::git_info() {
   if [ "$(git rev-parse --is-inside-work-tree 2> /dev/null)" = true ]; then
     echo -e "$(git_super_status)"
