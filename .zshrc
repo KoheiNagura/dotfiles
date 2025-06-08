@@ -8,3 +8,5 @@ source ${ZSHHOME}/completion.zsh
 source ${ZSHHOME}/functions.zsh
 source ${ZSHHOME}/history.zsh
 source ${ZSHHOME}/prompt.zsh
+
+eval "$(sheldon source)"
