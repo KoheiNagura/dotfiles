@@ -1,3 +1,5 @@
+shell = "zsh"
+
 [plugins]
 
 [plugins.zsh-completions]
@@ -8,3 +10,6 @@
 
 [plugins.zsh-syntax-highlighting]
   github = "zsh-users/zsh-syntax-highlighting"
+
+[plugins.zsh-git-prompt]
+  github = "olivierverdier/zsh-git-prompt"
