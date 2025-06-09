@@ -1,0 +1,10 @@
+[core]
+  editor = nvim
+
+[alias]
+  co = "!f() { \
+    branches=$(git branch --format=\"%(refname:short)%09%(authordate:relative)\"); \
+    branch=$(echo \"$branches\" | column -ts \"$(printf '\t')\" | fzf --reverse --height 10 --preview-window=right,65%, --preview 'echo {} | awk \"{print \\$1}\" | xargs git log -n 1 --color=always'); \
+    git checkout $(echo \"$branch\" | awk '{print $1}' ); \
+  }; f"
+
