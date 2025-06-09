@@ -1,0 +1,20 @@
+# generic
+bind generic P ?git push %(remote) %(repo:head)
+bind generic U ?git pull %(remote)
+bind generic F ?git fetch %(remote)
+bind generic O ?gh pr view --web
+
+# main-view
+bind main F ?git fetch %(remote)
+
+# refs-view
+bind refs D ?git branch -d %(branch)
+
+# status-view
+bind status D ?git clean -d -f -- %(file)
+
+# stash-view
+bind stash D ?git stash drop %(stash)
+
+# tree-view
+bind tree D ?git rm %(file)
