@@ -1,4 +1,8 @@
 # history
+export HISTFILE=${HOME}/.zsh_history
+export HISTSIZE=1000         # メモリに保存される履歴の件数
+export SAVEHIST=100000       # 履歴ファイルに保存される履歴の件数 
+
 setopt hist_ignore_dups      # 重複を記録しない
 setopt hist_ignore_all_dups  # ヒストリに追加されるコマンド行が古いものと同じなら古いものを削除
 setopt hist_ignore_space     # スペースで始まるコマンド行はヒストリリストから削除
