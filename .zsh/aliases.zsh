@@ -17,7 +17,7 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # その他
-alias vi='vim'
+alias vi='nvim'
 alias cl='clear'
 
 # 基本的なエイリアス
