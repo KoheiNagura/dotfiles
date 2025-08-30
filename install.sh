@@ -57,6 +57,10 @@ mkdir -p "$HOME/.config"
 ln -sfn "$DOTFILES_DIR/.config/sheldon" "$HOME/.config/sheldon"
 info "Linked sheldon config"
 
+# nvim config
+ln -sfn "$DOTFILES_DIR/.config/nvim" "$HOME/.config/nvim"
+info "Linked nvim config"
+
 info "STEP 4: Finalizing shell environment..."
 
 # fzfのキーバインドと補完をインストール
