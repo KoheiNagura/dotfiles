@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-
-set -eu
+#!/bin/bash -eu
 
 info() {
   printf "\033[32m%s\033[0m\n" "$1"
