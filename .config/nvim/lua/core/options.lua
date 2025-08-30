@@ -31,6 +31,8 @@ opt.whichwrap = "b,s,h,l,<,>,[,]"
 -- search
 opt.ignorecase = true
 opt.smartcase = true
+opt.hlsearch = true
+opt.incsearch = true
 
 -- keymap
 keymap('n', '<Esc><Esc>', ':nohlsearch<CR>', { silent = true })
