@@ -8,6 +8,9 @@ fi
 # ユーザーコマンド
 export PATH="$HOME/commands:$PATH"
 
+# git diff-highlight
+export PATH="$(brew --prefix git)/share/git-core/contrib/diff-highlight:$PATH"
+
 # パスの重複を削除
 typeset -U PATH path 
 

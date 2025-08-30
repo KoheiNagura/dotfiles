@@ -1,3 +1,6 @@
+# config
+set diff-highlight = true
+
 # generic
 bind generic P ?git push %(remote) %(repo:head)
 bind generic U ?git pull %(remote)
