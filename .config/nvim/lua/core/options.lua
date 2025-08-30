@@ -10,10 +10,11 @@ opt.helplang = { "ja", "en" }
 
 -- appearance
 opt.number = true
--- opt.relativenumber = true
 opt.cmdheight = 1
 opt.termguicolors = true
 opt.visualbell = true
+opt.showcmd = true
+opt.scrolloff = 5
 
 -- code style
 opt.expandtab = true
