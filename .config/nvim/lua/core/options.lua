@@ -1,4 +1,5 @@
 local opt = vim.opt
+local keymap = vim.keymap.set
 
 -- basic settings
 opt.title = true
@@ -29,4 +30,16 @@ opt.whichwrap = "b,s,h,l,<,>,[,]"
 -- search
 opt.ignorecase = true
 opt.smartcase = true
+
+-- keymap
+keymap('n', '<Esc><Esc>', ':nohlsearch<CR>', { silent = true })
+keymap('i', 'jj', '<ESC>', { silent = true })
+keymap('n', 'd', '"_d')
+keymap('v', 'd', '"_d')
+
+keymap('n', '<CR>', 'i<Return><Esc>^k')
+keymap('n', '<C-j>', '}')
+keymap('n', '<C-k>', '{')
+keymap('n', '<Tab>', '5j')
+keymap('n', '<S-Tab>', '5k')
 
