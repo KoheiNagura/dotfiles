@@ -19,6 +19,7 @@ alias egrep='egrep --color=auto'
 # その他
 alias vi='nvim'
 alias cl='clear'
+alias cc='claude'
 
 # 基本的なエイリアス
 alias ~='. cd_home' 

@@ -8,6 +8,9 @@ fi
 # ユーザーコマンド
 export PATH="$HOME/commands:$PATH"
 
+# Claude Code (Native Install)
+export PATH="$HOME/.local/bin:$PATH"
+
 # git diff-highlight
 export PATH="$(brew --prefix git)/share/git-core/contrib/diff-highlight:$PATH"
 
