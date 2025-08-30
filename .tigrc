@@ -1,20 +1,31 @@
 # generic
 bind generic P ?git push %(remote) %(repo:head)
 bind generic U ?git pull %(remote)
-bind generic F ?git fetch %(remote)
-bind generic O ?gh pr view --web
+bind generic F >git fetch %(remote)
+bind generic O !gh pr view --web
+
+bind generic C >git commit
+bind generic + >git commit --ammend --allow-empty
+
+bind generic ^ ?git reset --soft HEAD^
+
+bind generic @ >git co # fzf checkout alias
 
 # main-view
 bind main F ?git fetch %(remote)
+bind main ! ?git revert %(commit)
 
 # refs-view
 bind refs D ?git branch -d %(branch)
 
 # status-view
 bind status D ?git clean -d -f -- %(file)
+bind status S >git stash
+bind status V >vi %(file)
 
 # stash-view
 bind stash D ?git stash drop %(stash)
 
 # tree-view
 bind tree D ?git rm %(file)
+
