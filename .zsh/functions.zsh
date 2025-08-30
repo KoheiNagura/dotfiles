@@ -38,3 +38,22 @@ fpr() {
   pull_requests=$(echo $target_json | jq -r '.[] | "#\(.number)\t\(.title)\t\(.author.login)\t\(.updatedAt)"' | column -t -s$'\t')
   echo $pull_requests | fzf --height 10 --inline-info --reverse | awk '{print $1}' | xargs gh pr view --web
 }
+
+wd() {
+  local selected = $(
+    git worktree list | \
+    awk -v home="$HOME" '{
+      path = $1
+      sub(home, "~", path)
+      branch = $3
+      gsub(/[\[\]]/, "", branch)
+      printf "%s\t\003[90m%s\033[0m\n", branch, path
+    }' | \
+    column -t -s $'\t' | \
+    fzf --reverse --height 10 --ansi | \
+    sed 's/\x1b[[0-9;]*m//g' | \
+    awk '{print $2}'
+    )
+    [ -n "$selected" ] && cd "{$selected/#~/$HOME}"
+}
+
