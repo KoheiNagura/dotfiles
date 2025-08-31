@@ -9,5 +9,7 @@ brew "fd"
 brew "jq"
 
 brew "neovim"
+brew "bat"
+brew "glow"
 
 brew "sheldon"
