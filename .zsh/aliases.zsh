@@ -4,8 +4,8 @@ alias mv='mv -i'
 alias cp='cp -i'
 
 # ls関連
-alias ls='ls -F --color=auto'
-alias ll='ls -alF --color=auto'
+alias ls='eza -F --icons --group-directories-first'
+alias ll='eza -alF --icons --group-directories-first --git'
 
 # ディレクトリ移動
 alias ..='cd ..'
