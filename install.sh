@@ -64,6 +64,14 @@ info "Linked sheldon config"
 ln -sfn "$DOTFILES_DIR/.config/nvim" "$HOME/.config/nvim"
 info "Linked nvim config"
 
+# .tigrc
+ln -sfn "$DOTFILES_DIR/.tigrc" "$HOME/.tigrc"
+info "Linked .tigrc"
+
+# .gitconfig
+ln -sfn "$DOTFILES_DIR/.gitconfig" "$HOME/.gitconfig"
+info "Linked .gitconfig"
+
 info "STEP 4: Finalizing shell environment..."
 
 # fzfのキーバインドと補完をインストール
