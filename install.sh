@@ -47,7 +47,7 @@ brew bundle --file="$DOTFILES_DIR/.Brewfile"
 info "STEP 4: Creating symbolic links..."
 
 # .zshrc
-ln -sfn "$DOTFILES_DIR/.zshrc/.zshrc" "$HOME/.zshrc"
+ln -sfn "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
 info "Linked .zshrc"
 
 # .zsh directory
