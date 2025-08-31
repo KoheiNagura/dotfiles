@@ -5,7 +5,7 @@ local keymap = vim.keymap.set
 opt.title = true
 opt.encoding = "utf-8"
 opt.fileencoding = "utf-8"
-opt.ambiwidth = "double"
+opt.ambiwidth = "single"
 opt.helplang = { "ja", "en" }
 
 -- appearance
