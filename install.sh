@@ -1,5 +1,8 @@
 #!/bin/bash -eu
 
+DOTFILES_DIR="$HOME/dotfiles"
+REPO_URL="https://github.com/KoheiNagura/dotfiles"
+
 info() {
   printf "\033[32m%s\033[0m\n" "$1"
 }
