@@ -20,6 +20,7 @@ alias egrep='egrep --color=auto'
 alias vi='nvim'
 alias cl='clear'
 alias cc='claude'
+alias python='python3'
 
 # 基本的なエイリアス
 alias ~='. cd_home' 
