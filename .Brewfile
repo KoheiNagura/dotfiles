@@ -13,3 +13,6 @@ brew "bat"
 brew "glow"
 
 brew "sheldon"
+
+tap "homebrew/cask-fonts"
+cask "font-hack-nerd-font"
