@@ -12,6 +12,7 @@ brew "neovim"
 brew "bat"
 brew "glow"
 
+brew "tmux"
 brew "sheldon"
 
 tap "homebrew/cask-fonts"

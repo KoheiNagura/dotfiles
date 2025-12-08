@@ -64,6 +64,10 @@ info "Linked sheldon config"
 ln -sfn "$DOTFILES_DIR/.config/nvim" "$HOME/.config/nvim"
 info "Linked nvim config"
 
+# tmux config
+ln -sfn "$DOTFILES_DIR/.config/tmux/.tmux.conf" "$HOME/.tmux.conf"
+info "Linked tmux config"
+
 # .tigrc
 ln -sfn "$DOTFILES_DIR/.tigrc" "$HOME/.tigrc"
 info "Linked .tigrc"
