@@ -65,7 +65,7 @@ ln -sfn "$DOTFILES_DIR/.config/nvim" "$HOME/.config/nvim"
 info "Linked nvim config"
 
 # tmux config
-ln -sfn "$DOTFILES_DIR/.config/tmux/.tmux.conf" "$HOME/.tmux.conf"
+ln -sfn "$DOTFILES_DIR/.config/tmux" "$HOME/.config/tmux"
 info "Linked tmux config"
 
 # .tigrc
