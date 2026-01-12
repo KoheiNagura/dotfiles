@@ -14,6 +14,8 @@ export PATH="$HOME/.local/bin:$PATH"
 # git diff-highlight
 export PATH="$(brew --prefix git)/share/git-core/contrib/diff-highlight:$PATH"
 
+export PATH="$(go env GOPATH)/bin:$PATH"
+
 # パスの重複を削除
 typeset -U PATH path 
 
