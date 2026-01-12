@@ -4,4 +4,11 @@ return {
   dependencies = {
     "nvim-telescope/telescope-fzf-native.nvim",
   },
+  opts = {
+    sources = {
+      path = {
+        max_depth = 2,
+      },
+    },
+  },
 }
