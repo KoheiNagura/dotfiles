@@ -8,6 +8,9 @@ brew "ripgrep"
 brew "fd"
 brew "jq"
 
+brew "eza"
+brew "yazi"
+
 brew "neovim"
 brew "bat"
 brew "glow"
