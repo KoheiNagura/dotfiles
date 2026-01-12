@@ -19,5 +19,28 @@ require("lazy").setup({
   },
   -- アップデートの確認は手動
   checker = { enabled = false },
+  performance = {
+    rtp = {
+      disabled_plugins = {
+        "netrw",
+        "netrwPlugin",
+        "netrwSettings",
+        "netrwFileHandlers",
+        "gzip",
+        "tar",
+        "tarPlugin",
+        "zip",
+        "zipPlugin",
+        "getscript",
+        "getscriptPlugin",
+        "vimball",
+        "vimballPlugin",
+        "2html_plugin",
+        "logiPat",
+        "rrhelper",
+        "spellfile_plugin",
+      }
+    }
+  }
 })
 
