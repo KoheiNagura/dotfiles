@@ -5,6 +5,9 @@ return {
     { "-", "<cmd>Oil<CR>", desc = "Open parent directory" },
   },
   opts = {
+    keymaps = {
+      ["q"] = "actions.close",
+    },
     view_options = {
       show_hidden = true,
     },
