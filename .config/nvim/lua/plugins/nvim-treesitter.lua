@@ -4,9 +4,14 @@ vim.api.nvim_create_autocmd("FileType", {
     local ok, nvim_treesitter = pcall(require, "nvim-treesitter")
     if not ok then return end
 
+    local ok_parsers, parsers = pcall(require, "nvim-treesitter.parsers")
+    if not ok_parsers then return end
+
     local filetype = vim.bo[event.buf].filetype
     local language = vim.treesitter.language.get_lang(filetype)
     if not language then return end
+
+    if not parsers[language] then return end
 
     local buffer_number = event.buf
 
