@@ -2,4 +2,5 @@
 *.log
 *.swp
 .env
-.config/nvim/lazy-lock.json 
+.config/nvim/lazy-lock.json
+.config/tmux/plugins/
