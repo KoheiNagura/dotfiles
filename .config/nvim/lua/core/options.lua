@@ -21,7 +21,7 @@ opt.expandtab = true
 opt.shiftwidth = 2
 opt.tabstop = 2
 opt.smartindent = true
- 
+
 -- input
 opt.mouse = "a"
 opt.clipboard = { "unnamed", "unnamedplus" }
