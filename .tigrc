@@ -8,7 +8,7 @@ bind generic F >git fetch %(remote)
 bind generic O !gh pr view --web
 
 bind generic C >git commit
-bind generic + >git commit --ammend --allow-empty
+bind generic + >git commit --amend --allow-empty
 
 bind generic ^ ?git reset --soft HEAD^
 
